@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 01 básico</title>
+    </head>
+    <body>
+        <h1>Ejercicio 01 JS básico</h1>
+        <ul>
+            <li>Pide al usuario su nombre usando prompt()</li>
+            <li>Comprueba que haya rellenado el nombre</li>
+            <li>Si no lo relleno muestra un mensaje de error en consola</li>
+            <li>Si lo relleno muestra mensaje con nombre</li>
+            <li>Si relleno el nombre que pida la edad</li>
+            <li>Guardar variable con tu edad y comprobar quien es mayor</li>
+            <li>Devuelve el resultado en consola</li>
+        </ul>
+<script>
+
+const nombre = prompt('Como te llamas')
+const age = 31
+
+if(nombre){
+    console.log(`Encantado ${nombre}`);
+    const edad = prompt('Cuál es tu edad');
+    if(edad) {
+    if(edad > age) {
+        console.log('Eres mayor que yo');
+    } else if (edad && edad < age) {
+        console.log('Eres más pequeño');
+    } else {
+        console.log('Tenemos la misma edad');
+    }
+    } else {
+        console.log('No me diste la edad');
+    }
+} else {
+    console.log(`No completo el nombre`);
+}
+
+
+</script>
+
+
+
+
+
+
+    </body>
+</html>
